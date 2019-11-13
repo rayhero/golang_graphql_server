@@ -1,0 +1,21 @@
+# .gqlgen.yml example
+#
+# Refer to https://gqlgen.com/config/
+# for detailed .gqlgen.yml documentation.
+
+schema:
+- src/base/gqlgen/schema.graphql
+exec:
+  filename: src/base/gqlgen/generated.go
+  package: gqlgen
+model:
+  filename: src/base/gqlgen/models/generated.go
+  package: models
+# models:
+#   Todo:
+#       model: github.com/rayhero/gqlgen-todos.Todo
+resolver:
+  filename: src/base/gqlgen/resolvers/generated/resolver.go
+  type: Resolver
+  package: resolvers
+autobind: []
